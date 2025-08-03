@@ -1,0 +1,243 @@
+{
+    "models": {
+        "random_forest": {
+            "best_params": {
+                "bootstrap": true,
+                "ccp_alpha": 0.0,
+                "criterion": "squared_error",
+                "max_depth": 20,
+                "max_features": 0.3,
+                "max_leaf_nodes": null,
+                "max_samples": null,
+                "min_impurity_decrease": 0.0,
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "min_weight_fraction_leaf": 0.0,
+                "monotonic_cst": null,
+                "n_estimators": 700,
+                "n_jobs": -1,
+                "oob_score": false,
+                "random_state": 42,
+                "verbose": 0,
+                "warm_start": false
+            },
+            "metrics": {
+                "model": "Random Forest Optimizado",
+                "rmse": 0.19084832112378625,
+                "mae": 0.13067708613435128,
+                "r2": 0.9964673583883585,
+                "precision": 0.986046511627907,
+                "recall": 0.9485458612975392,
+                "f1": 0.9669327251995439,
+                "tss": 0.9453662110590654,
+                "error_mean": -0.020934339938766373,
+                "error_std": 0.18969669234621886,
+                "error_min": -1.1715162575986102,
+                "error_max": 1.2938593316207623
+            },
+            "training_samples": 37368,
+            "features_used": 24,
+            "top_features": [
+                {
+                    "feature": "tmin_ma3",
+                    "importance": 0.2098187986240765
+                },
+                {
+                    "feature": "tmean",
+                    "importance": 0.1596454645690532
+                },
+                {
+                    "feature": "temp_range",
+                    "importance": 0.12160463761059538
+                },
+                {
+                    "feature": "pressure",
+                    "importance": 0.10769628760348282
+                },
+                {
+                    "feature": "temp_deviation",
+                    "importance": 0.08833163168771778
+                },
+                {
+                    "feature": "tmin_ma7",
+                    "importance": 0.07470431733887287
+                },
+                {
+                    "feature": "tmean_ma3",
+                    "importance": 0.06386948933670955
+                },
+                {
+                    "feature": "tmean_ma7",
+                    "importance": 0.0286850568647142
+                },
+                {
+                    "feature": "tmin_lag1",
+                    "importance": 0.027465185627070638
+                },
+                {
+                    "feature": "rh",
+                    "importance": 0.019916595397022372
+                }
+            ]
+        },
+        "xgboost": {
+            "best_params": {
+                "objective": "reg:squarederror",
+                "base_score": null,
+                "booster": null,
+                "callbacks": null,
+                "colsample_bylevel": null,
+                "colsample_bynode": null,
+                "colsample_bytree": 0.8,
+                "early_stopping_rounds": null,
+                "enable_categorical": false,
+                "eval_metric": "rmse",
+                "feature_types": null,
+                "gamma": 0.1,
+                "gpu_id": null,
+                "grow_policy": null,
+                "importance_type": null,
+                "interaction_constraints": null,
+                "learning_rate": 0.01,
+                "max_bin": null,
+                "max_cat_threshold": null,
+                "max_cat_to_onehot": null,
+                "max_delta_step": null,
+                "max_depth": 6,
+                "max_leaves": null,
+                "min_child_weight": null,
+                "missing": NaN,
+                "monotone_constraints": null,
+                "n_estimators": 1000,
+                "n_jobs": -1,
+                "num_parallel_tree": null,
+                "predictor": null,
+                "random_state": 42,
+                "reg_alpha": 0.1,
+                "reg_lambda": 1,
+                "sampling_method": null,
+                "scale_pos_weight": null,
+                "subsample": 0.8,
+                "tree_method": null,
+                "validate_parameters": null,
+                "verbosity": null
+            },
+            "metrics": {
+                "model": "XGBoost",
+                "rmse": 0.15388018962781064,
+                "mae": 0.11068202167840381,
+                "r2": 0.99770338435921,
+                "precision": 0.9885321100917431,
+                "recall": 0.9642058165548099,
+                "f1": 0.9762174405436014,
+                "tss": 0.9615561080227484,
+                "error_mean": -0.012210916649748122,
+                "error_std": 0.15339493562195547,
+                "error_min": -1.0118871307373043,
+                "error_max": 0.779227180480957
+            },
+            "best_iteration": 999,
+            "top_features": [
+                {
+                    "feature": "tmin_ma3",
+                    "importance": 0.503406822681427
+                },
+                {
+                    "feature": "pressure",
+                    "importance": 0.14070792496204376
+                },
+                {
+                    "feature": "tmean",
+                    "importance": 0.10625208169221878
+                },
+                {
+                    "feature": "temp_range",
+                    "importance": 0.06767217069864273
+                },
+                {
+                    "feature": "temp_deviation",
+                    "importance": 0.04672939330339432
+                },
+                {
+                    "feature": "tmin_ma7",
+                    "importance": 0.02731667459011078
+                },
+                {
+                    "feature": "rh",
+                    "importance": 0.025500357151031494
+                },
+                {
+                    "feature": "tmax",
+                    "importance": 0.01772799901664257
+                },
+                {
+                    "feature": "tmean_ma3",
+                    "importance": 0.012234535999596119
+                },
+                {
+                    "feature": "tmean_ma7",
+                    "importance": 0.00967419520020485
+                }
+            ]
+        },
+        "svm": {
+            "best_params": {
+                "C": 100,
+                "cache_size": 1000,
+                "coef0": 0.0,
+                "degree": 3,
+                "epsilon": 0.01,
+                "gamma": 0.001,
+                "kernel": "rbf",
+                "max_iter": -1,
+                "shrinking": true,
+                "tol": 0.001,
+                "verbose": false
+            },
+            "metrics": {
+                "model": "SVM Optimizado",
+                "rmse": 0.005859410905897552,
+                "mae": 0.00452285279208298,
+                "r2": 0.9999966701029807,
+                "precision": 1.0,
+                "recall": 0.9955257270693513,
+                "f1": 0.9977578475336323,
+                "tss": 0.9955257270693513,
+                "error_mean": 0.0001773470133235112,
+                "error_std": 0.0058567264065360275,
+                "error_min": -0.032360074185815435,
+                "error_max": 0.0371757107853572
+            },
+            "training_samples": 20000
+        }
+    },
+    "best_model": "SVM Optimizado",
+    "best_rmse": 0.005859410905897552,
+    "feature_columns": [
+        "tmax",
+        "tmean",
+        "rh",
+        "pressure",
+        "wind",
+        "temp_range",
+        "temp_deviation",
+        "month",
+        "day_of_year",
+        "week_of_year",
+        "season_summer",
+        "season_autumn",
+        "tmin_lag1",
+        "tmin_lag2",
+        "tmin_lag3",
+        "tmin_lag7",
+        "tmax_lag1",
+        "tmean_lag1",
+        "tmin_ma3",
+        "tmin_ma7",
+        "tmean_ma3",
+        "tmean_ma7",
+        "tmin_std3",
+        "tmin_std7"
+    ],
+    "training_date": "2025-08-02 22:47:48"
+}

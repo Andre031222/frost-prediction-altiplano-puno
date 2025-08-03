@@ -1,0 +1,34 @@
+{
+    "statistical_models": {
+        "sarimax": {
+            "description": "Seasonal ARIMA with exogenous variables",
+            "stations_trained": 0,
+            "metrics": {}
+        },
+        "holt_winters": {
+            "description": "Triple exponential smoothing",
+            "stations_trained": 0,
+            "metrics": {}
+        },
+        "prophet": {
+            "description": "Facebook Prophet with additional regressors",
+            "stations_trained": 1,
+            "metrics": {
+                "rmse": 2.096484922448944,
+                "mae": 1.6999135754308214,
+                "r2": 0.5737087884183174,
+                "precision": 0.5923809523809523,
+                "recall": 0.6957494407158836,
+                "f1": 0.6399176954732511,
+                "tss": 0.5823419155436526
+            }
+        },
+        "stl_arima": {
+            "description": "STL decomposition + ARIMA on residuals",
+            "stations_trained": 0,
+            "metrics": {}
+        }
+    },
+    "best_model": "Prophet",
+    "training_date": "2025-07-17 22:02:32"
+}

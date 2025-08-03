@@ -1,0 +1,80 @@
+{
+    "models": {
+        "mlp": {
+            "architecture": "Feedforward 4 capas [128-64-32-16]",
+            "parameters": 14977,
+            "metrics": {
+                "model": "MLP",
+                "rmse": 0.20760108195701596,
+                "mae": 0.15986211437248365,
+                "r2": 0.9958199438293701,
+                "precision": 0.9976580796252927,
+                "recall": 0.9530201342281879,
+                "f1": 0.9748283752860412,
+                "tss": 0.9524901925217756
+            },
+            "training_epochs": 44
+        },
+        "lstm": {
+            "architecture": "LSTM 2 capas [64-32]",
+            "parameters": 35745,
+            "metrics": {
+                "model": "LSTM",
+                "rmse": 1.152678075976058,
+                "mae": 0.6455981054083217,
+                "r2": 0.8711992423287191,
+                "precision": 0.874439461883408,
+                "recall": 0.87248322147651,
+                "f1": 0.8734602463605823,
+                "tss": 0.8426959874339568
+            },
+            "training_epochs": 42,
+            "sequence_length": 7
+        },
+        "cnn1d": {
+            "architecture": "Conv1D 3 capas [64-32-16]",
+            "parameters": 14385,
+            "metrics": {
+                "model": "CNN-1D",
+                "rmse": 1.1719947496175966,
+                "mae": 0.7069843395646191,
+                "r2": 0.8668461634849816,
+                "precision": 0.8990384615384616,
+                "recall": 0.8366890380313199,
+                "f1": 0.8667439165701043,
+                "tss": 0.814348612499405
+            },
+            "training_epochs": 50,
+            "sequence_length": 7
+        }
+    },
+    "best_model": "MLP",
+    "best_rmse": 0.20760108195701596,
+    "feature_columns": [
+        "tmax",
+        "tmean",
+        "rh",
+        "pressure",
+        "wind",
+        "temp_range",
+        "temp_deviation",
+        "month",
+        "day_of_year",
+        "week_of_year",
+        "season_summer",
+        "season_autumn",
+        "tmin_lag1",
+        "tmin_lag2",
+        "tmin_lag3",
+        "tmin_lag7",
+        "tmax_lag1",
+        "tmean_lag1",
+        "tmin_ma3",
+        "tmin_ma7",
+        "tmean_ma3",
+        "tmean_ma7",
+        "tmin_std3",
+        "tmin_std7"
+    ],
+    "training_date": "2025-07-18 00:20:52"
+}

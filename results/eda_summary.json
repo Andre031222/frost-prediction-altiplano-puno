@@ -1,0 +1,27 @@
+{
+    "total_records": 39702,
+    "frost_percentage": 32.17218276157372,
+    "extreme_events": "2",
+    "peak_frost_months": [
+        3,
+        2,
+        4
+    ],
+    "important_features": [
+        "tmean",
+        "is_frost",
+        "temp_range",
+        "temp_deviation",
+        "pressure"
+    ],
+    "high_frost_stations": [
+        "POWER"
+    ],
+    "insights": [
+        "Datos desbalanceados - considerar SMOTE o ajuste de pesos",
+        "Fuerte estacionalidad - incluir features c\u00edclicas",
+        "Alta autocorrelaci\u00f3n - usar modelos que capturen dependencias temporales",
+        "Variabilidad espacial significativa - considerar modelos por estaci\u00f3n",
+        "Eventos extremos asociados a condiciones espec\u00edficas"
+    ]
+}

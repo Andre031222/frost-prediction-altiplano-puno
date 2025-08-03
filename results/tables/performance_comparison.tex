@@ -1,0 +1,28 @@
+\begin{table*}[!t]
+\caption{Métricas de desempeño para pronóstico de temperatura mínima diaria (promedio sobre 13 estaciones)}
+\label{tab:performance}
+\centering
+\begin{tabular}{lcccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Modelo}} & \multicolumn{3}{c}{\textbf{Predicción de Temperatura}} & \multicolumn{5}{c}{\textbf{Detección de Heladas}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-9}
+& RMSE (°C) & MAE (°C) & $R^2$ & Precisión & Recall & F1 & TSS & AUC \\
+\midrule
+\multicolumn{9}{l}{\textit{Modelos Estadísticos}} \\
+Prophet & 2.10 $\pm$ 2.03 & 1.70 & 0.574 & 0.59 & 0.70 & 0.64 & 0.58 & 0.79 \\
+\midrule
+\multicolumn{9}{l}{\textit{Modelos de Machine Learning}} \\
+\textbf{SVM} & 0.01 $\pm$ 0.01 & 0.00 & 1.000 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+XGBoost & 0.15 $\pm$ 0.15 & 0.11 & 0.998 & 0.99 & 0.96 & 0.98 & 0.96 & 0.98 \\
+Random Forest & 0.19 $\pm$ 0.19 & 0.13 & 0.996 & 0.99 & 0.95 & 0.97 & 0.95 & 0.97 \\
+\midrule
+\multicolumn{9}{l}{\textit{Modelos de Deep Learning}} \\
+MLP & 0.21 $\pm$ 0.18 & 0.16 & 0.996 & 1.00 & 0.95 & 0.97 & 0.95 & 0.98 \\
+LSTM & 1.15 $\pm$ 1.15 & 0.65 & 0.871 & 0.87 & 0.87 & 0.87 & 0.84 & 0.92 \\
+CNN-1D & 1.17 $\pm$ 1.17 & 0.71 & 0.867 & 0.90 & 0.84 & 0.87 & 0.81 & 0.91 \\
+\midrule
+\multicolumn{9}{l}{\textit{Modelo Ensemble}} \\
+Ensemble & 1.97 $\pm$ 1.89 & 1.59 & -0.199 & 0.62 & 0.69 & 0.66 & 0.59 & 0.80 \\
+\bottomrule
+\end{tabular}
+\end{table*}

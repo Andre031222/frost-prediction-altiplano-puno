@@ -1,0 +1,53 @@
+{
+    "fecha_evaluacion": "2025-08-02",
+    "modelos_evaluados": 8,
+    "modelos_cargados": [
+        "cnn",
+        "ensemble",
+        "lstm",
+        "mlp",
+        "prophet",
+        "rf",
+        "svm",
+        "xgboost"
+    ],
+    "observaciones": {
+        "cnn": 2327,
+        "ensemble": 180,
+        "lstm": 2327,
+        "mlp": 2334,
+        "prophet": 2334,
+        "rf": 2334,
+        "svm": 2334,
+        "xgboost": 2334
+    },
+    "mejor_modelo": {
+        "nombre": "lstm",
+        "categoria": "Deep Learning",
+        "RMSE": 1.1526780737833382,
+        "MAE": 0.6455981045455522,
+        "TSS": 0.8426959874339568
+    },
+    "por_categoria": {
+        "Machine Learning": {
+            "n_modelos": 3,
+            "mejor_rmse": 0.0058594109058975495,
+            "promedio_rmse": 0.11686263995658856
+        },
+        "Deep Learning": {
+            "n_modelos": 3,
+            "mejor_rmse": 0.20760108292548524,
+            "promedio_rmse": 0.8440913017534584
+        },
+        "Ensemble": {
+            "n_modelos": 1,
+            "mejor_rmse": 1.9713948852721441,
+            "promedio_rmse": 1.9713948852721441
+        },
+        "Statistical": {
+            "n_modelos": 1,
+            "mejor_rmse": 2.096484922448944,
+            "promedio_rmse": 2.096484922448944
+        }
+    }
+}

@@ -1,0 +1,15 @@
+\begin{table}[!t]
+\caption{Comparación de modelos para pronóstico de heladas}
+\label{tab:model_comparison}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{Categoría} & \textbf{RMSE (°C)} & \textbf{MAE (°C)} & \textbf{R²} & \textbf{TSS} \\
+\midrule
+\textbf{LSTM} & Deep Learning & 1.15 & 0.65 & 0.871 & 0.84 \\
+CNN & Deep Learning & 1.17 & 0.71 & 0.867 & 0.81 \\
+ENSEMBLE & Ensemble & 1.97 & 1.59 & -0.199 & 0.59 \\
+PROPHET & Statistical & 2.10 & 1.70 & 0.574 & 0.58 \\
+\bottomrule
+\end{tabular}
+\end{table}

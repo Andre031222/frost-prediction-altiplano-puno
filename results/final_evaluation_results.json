@@ -1,0 +1,16 @@
+{
+    "evaluation_date": "2025-08-02T22:57:22.881378",
+    "models_evaluated": 8,
+    "metrics_calculated": 8,
+    "warnings": [
+        "Algunos modelos muestran RMSE < 0.5\u00b0C, sugiriendo posible sobreajuste",
+        "Se recomienda revisar la implementaci\u00f3n y validaci\u00f3n de modelos ML",
+        "Los resultados de DL (LSTM, CNN) parecen m\u00e1s realistas"
+    ],
+    "recommendations": [
+        "Verificar divisi\u00f3n temporal de datos",
+        "Revisar features utilizadas para evitar data leakage",
+        "Considerar validaci\u00f3n cruzada temporal",
+        "Evaluar en conjunto de datos completamente independiente"
+    ]
+}
